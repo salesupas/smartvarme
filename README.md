@@ -2,6 +2,8 @@
 
 Custom WordPress website for Smartvarme, built with WooCommerce for e-commerce functionality.
 
+**Developed by:** [SalesUp AS](https://salesup.no) - SalesUp Team
+
 ## 🎯 Project Overview
 
 Smartvarme is a Norwegian e-commerce platform specializing in heating products, stoves, and energy-efficient solutions. This repository contains the custom-developed code including themes and plugins.
@@ -286,13 +288,17 @@ This is a private project. For internal development:
 
 ## 📄 License
 
-Proprietary - All rights reserved by Smartvarme/SalesUp AS
+Proprietary - All rights reserved by Smartvarme (client) and SalesUp AS (developer)
 
 ## 🆘 Support
 
 For technical issues or questions:
-- **Technical Lead:** SalesUp AS
-- **Developer:** Claude Sonnet 4.5 (AI Assistant)
+- **Development Agency:** [SalesUp AS](https://salesup.no)
+- **Client:** Smartvarme
+- **Lead Developer:** SalesUp Team
+- **AI Assistant:** Claude Sonnet 4.5
+
+**Note:** Plugin is named "Smartvarme Core" after the client, as per standard practice. SalesUp AS is the development agency and maintains the codebase.
 
 ---
 

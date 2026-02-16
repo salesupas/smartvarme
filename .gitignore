@@ -48,3 +48,7 @@ wp-content/plugins/*
 wp-content/themes/*
 !wp-content/themes/smartvarme-theme/
 !wp-content/themes/astra-child/
+
+# Plugin node_modules
+wp-content/plugins/*/node_modules/
+wp-content/plugins/*/blocks/*/node_modules/
