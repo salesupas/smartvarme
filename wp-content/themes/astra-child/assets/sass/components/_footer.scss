@@ -1,0 +1,32 @@
+.site-primary-footer-wrap {
+
+	.site-footer-section-1 .wp-block-image.size-full {
+		margin-top: 0;
+	}
+	.site-footer-section-4 .widget {
+		margin: 0 0 1em 0;
+	}
+
+	h2 {
+		font-size: 14px;
+	}
+}
+
+.site-below-footer-wrap {
+	.site-footer-section-3 {
+		.footer-widget-area-inner {
+			margin: 0;
+
+			.wp-block-image {
+				margin: 0;
+			}
+		}
+	}
+
+	[data-section="section-below-footer-builder"].ast-footer-row-mobile-stack .site-footer-section {
+		@media (max-width: 544px) {
+			display: flex;
+			justify-content: left;
+		}
+	}
+}

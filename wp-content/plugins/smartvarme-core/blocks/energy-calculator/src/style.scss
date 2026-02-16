@@ -1,0 +1,77 @@
+.wp-block-smartvarme-energy-calculator {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin: 2rem 0;
+
+    .calculator-form {
+        margin-bottom: 2rem;
+
+        .form-group {
+            margin-bottom: 1rem;
+
+            label {
+                display: block;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+            }
+
+            input,
+            select {
+                width: 100%;
+                max-width: 300px;
+                padding: 0.5rem;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    .calculator-result {
+        .result-highlight {
+            font-size: 1.25rem;
+            color: var(--wp--preset--color--primary, #003d5b);
+            margin: 1rem 0;
+        }
+
+        .recommended-products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+
+            .product-card {
+                border: 1px solid #e0e0e0;
+                padding: 1rem;
+                border-radius: 8px;
+                text-align: center;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                h6 {
+                    font-size: 1rem;
+                    margin: 0.5rem 0;
+                }
+
+                .price {
+                    font-weight: 600;
+                    color: var(--wp--preset--color--gold, #f7a720);
+                }
+
+                .power {
+                    font-size: 0.875rem;
+                    color: #666;
+                }
+            }
+        }
+
+        .disclaimer {
+            margin-top: 1.5rem;
+            color: #666;
+            font-style: italic;
+        }
+    }
+}

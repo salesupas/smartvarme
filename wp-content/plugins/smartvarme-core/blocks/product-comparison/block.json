@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "smartvarme/product-comparison",
+	"version": "0.1.0",
+	"title": "Produktsammenligning",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Sammenlign varmepumper side ved side",
+	"example": {},
+	"attributes": {
+		"productIds": {
+			"type": "array",
+			"default": []
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "smartvarme",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

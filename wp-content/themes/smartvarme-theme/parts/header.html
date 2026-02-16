@@ -1,0 +1,50 @@
+<!-- wp:group {"tagName":"header","align":"full","className":"smartvarme-header","style":{"spacing":{"padding":{"top":"1rem","bottom":"1rem"}},"border":{"bottom":{"width":"1px","color":"#e5e5e5"}},"color":{"background":"#ffffff"}},"layout":{"type":"default"}} -->
+<header class="wp-block-group alignfull smartvarme-header has-background" style="background-color:#ffffff;border-bottom-color:#e5e5e5;border-bottom-width:1px;padding-top:1rem;padding-bottom:1rem">
+  <!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
+  <div class="wp-block-group alignwide">
+    <!-- wp:site-logo {"width":180,"className":"site-logo"} /-->
+
+    <!-- wp:html -->
+    <div class="smart-search-wrapper">
+      <form class="smart-search-form" role="search" method="get" action="/">
+        <input type="search"
+               class="smart-search-input"
+               placeholder="Søk etter produkter..."
+               name="s"
+               autocomplete="off" />
+        <button type="submit" class="smart-search-button" aria-label="Søk">
+          🔍
+        </button>
+      </form>
+      <div class="smart-search-results" style="display: none;">
+        <div class="smart-search-results-inner">
+          <div class="search-sidebar">
+            <div class="search-categories">
+              <h4>Kategorier</h4>
+              <div class="category-results"></div>
+            </div>
+            <div class="search-brands">
+              <h4>Merker</h4>
+              <div class="brand-results"></div>
+            </div>
+          </div>
+          <div class="search-products">
+            <h4>Produkter</h4>
+            <div class="product-results"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /wp:html -->
+
+    <!-- wp:group {"className":"header-actions","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"right"}} -->
+    <div class="wp-block-group header-actions">
+      <!-- wp:navigation {"overlayMenu":"mobile","layout":{"type":"flex","justifyContent":"center","flexWrap":"nowrap"},"style":{"spacing":{"blockGap":"2rem"}}} /-->
+
+      <!-- wp:woocommerce/mini-cart {"miniCartIcon":"bag"} /-->
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
+</header>
+<!-- /wp:group -->

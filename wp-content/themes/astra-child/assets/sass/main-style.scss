@@ -1,0 +1,19 @@
+/**
+* Woocommerce
+**/
+@import "global/variables";
+
+@import "07-woocommerce/archive";
+@import "07-woocommerce/product-loop";
+@import "07-woocommerce/single-product";
+@import "07-woocommerce/elements";
+@import "07-woocommerce/mini-cart";
+@import "07-woocommerce/cart";
+@import "07-woocommerce/checkout";
+@import "07-woocommerce/my-account";
+@import "07-woocommerce/wishlist";
+@import "07-woocommerce/popup";
+
+@import "components/header";
+@import "components/footer";
+@import "components/cookie-notice";

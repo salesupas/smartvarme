@@ -1,0 +1,37 @@
+/**
+ * Checkout
+ */
+
+.woocommerce-checkout {
+	.account-type-wrapper {
+		.account-type-button {
+			margin-top: 10px;
+			margin-bottom: 10px;
+
+			cursor: pointer;
+
+			img {
+				display: none;
+			}
+
+			span {
+				margin-left: auto;
+			}
+		}
+	}
+
+	#kco-wrapper {
+		@media screen and (max-width: 769px) {
+			display: flex;
+			flex-direction: column;
+
+			#kco-order-review {
+				order: 2;
+			}
+
+			#kco-iframe {
+				order: 1;
+			}
+		}
+	}
+}

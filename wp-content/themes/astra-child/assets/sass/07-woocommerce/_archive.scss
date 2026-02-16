@@ -1,0 +1,230 @@
+/**
+ * Archive
+ */
+
+.widget-area.secondary .sidebar-main,
+.astra-off-canvas-sidebar {
+	.widget-title {
+		font-size: 22px;
+		font-weight: 600;
+	}
+	.price_slider_wrapper {
+		.price_slider {
+			.ui-slider-range,
+			.ui-slider-handle {
+				background-color: #f7a720;
+			}
+		}
+
+		.price_slider_amount {
+			button {
+				background-color: #f7a720;
+			}
+		}
+	}
+}
+
+.content-area.primary {
+	.astra-shop-filter-button {
+		background-color: #f7a720;
+		display: inline-block;
+
+		@media only screen and (min-width: 921px) {
+			display: none;
+		}
+	}
+
+	.woocommerce-result-count {
+		display: inline-block;
+
+		@media only screen and (max-width: 600px) {
+			float: unset;
+		}
+	}
+
+	.woocommerce-ordering {
+		@media only screen and (max-width: 600px) {
+			float: unset;
+		}
+
+		.orderby {
+			@media only screen and (max-width: 600px) {
+				width: 100%;
+			}
+		}
+	}
+
+	.products {
+		@media (max-width: 921px) {
+			grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+		}
+
+		@media (max-width: 544px) {
+			grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+		}
+
+		.product {
+			.astra-shop-thumbnail-wrap {
+				.onsale.circle {
+					background-color: #f7a720;
+				}
+
+				.tinv-wraper {
+					top: 0;
+					left: 2px;
+
+					.tinvwl_add_to_wishlist_button {
+						color: #d26e4b;
+					}
+				}
+			}
+
+			.astra-shop-summary-wrap {
+				margin-top: auto;
+
+				.ast-woo-product-category {
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+
+	.woocommerce-pagination {
+		.page-numbers {
+			li {
+				.page-numbers {
+					&.current,
+					&:hover {
+						background-color: #f7a720;
+						border-color: #f7a720;
+					}
+				}
+			}
+		}
+	}
+}
+.widget-area.secondary {
+	.maksimer-filter-products-by-stock {
+		position: relative;
+		display: inline-block;
+		text-decoration: none;
+		font-size: 16px;
+		font-weight: 500;
+		padding: 8px 0 !important;
+
+		&:before {
+			content: "";
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 13px;
+			margin-top: -4px;
+			width: 22px;
+			height: 22px;
+			border: 1px solid #555555;
+			box-sizing: border-box;
+			filter: drop-shadow(0.3px 0.3px 1.5px rgba(0, 0, 0, 0.09));
+			border-radius: 1px;
+		}
+
+		&.active {
+			&:before {
+				border: 0;
+				background-color: #f7a720;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				left: 3px;
+				top: 17px;
+				display: block;
+				width: 15px;
+				height: 13px;
+				border: 1px solid transparent;
+				background-image: url(#{$imagePath}/checkmark-white.svg);
+				background-repeat: no-repeat;
+				@media screen and (max-width: 600px) {
+					width: 15px;
+					height: 15px;
+					background-size: 14px;
+				}
+			}
+		}
+	}
+	.woocommerce-widget-layered-nav {
+		//&:not(.widget_layered_nav_filters) {
+		//	ul:not(.woocommerce-widget-layered-nav-list) li a {
+		//		&:before, &:after {
+		//			display: none;
+		//		}
+		//	}
+		//}
+
+		ul li {
+			overflow: hidden;
+			padding: 0;
+			margin: 0;
+
+			&:before {
+				display: none;
+			}
+
+			a {
+				position: relative;
+				display: inline-block;
+				text-decoration: none;
+				font-size: 16px;
+				font-weight: 500;
+				padding: 8px 0 !important;
+
+				&:before {
+					content: "";
+					display: inline-block;
+					vertical-align: middle;
+					margin-right: 13px;
+					margin-top: -4px;
+					width: 22px;
+					height: 22px;
+					border: 1px solid #555555;
+					box-sizing: border-box;
+					filter: drop-shadow(0.3px 0.3px 1.5px rgba(0, 0, 0, 0.09));
+					border-radius: 1px;
+				}
+			}
+
+			&.chosen {
+				a {
+					&:before {
+						border: 0;
+						background-color: #f7a720;
+					}
+					&:after {
+						content: "";
+						position: absolute;
+						left: 3px;
+						top: 17px;
+						display: block;
+						width: 15px;
+						height: 13px;
+						border: 1px solid transparent;
+						background-image: url(#{$imagePath}/checkmark-white.svg);
+						background-repeat: no-repeat;
+						@media screen and (max-width: 600px) {
+							width: 15px;
+							height: 15px;
+							background-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.maksimer-filter-by-stock {
+	display: none;
+}
+body.maksimer-show-stock-filter {
+	.maksimer-filter-by-stock {
+		display: block;
+	}
+}

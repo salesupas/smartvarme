@@ -1,0 +1,78 @@
+.tinv-wishlist {
+	.product-remove button {
+		background: none;
+	}
+}
+.woocommerce.tinv-wishlist {
+	color: #555;
+
+	a {
+		color: #555;
+	}
+
+	button.button {
+		padding: 10px !important;
+		font-weight: 400 !important;
+		min-width: 135px !important;
+	}
+
+	//table
+	table.tinvwl-table-manage-list,
+	table.tinvwl-table-manage-lists {
+		thead {
+			th {
+				font-size: 0.875rem;
+			}
+		}
+
+		tfoot {
+			button.button,
+			a.button {
+				background: transparent;
+				border: 1px solid #d26e4b;
+				border-radius: 2px;
+				color: #d26e4b;
+				font-size: 12px;
+				font-weight: 600 !important;
+				text-transform: lowercase;
+				padding: 12px !important;
+				text-align: center;
+
+				&::first-letter {
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+
+	.tinvwl-estimate-wrap {
+		a {
+			color: #fff;
+		}
+	}
+}
+
+.tinv-modal-inner {
+	button.button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: transparent;
+		border: 1px solid black;
+		border-radius: 5px;
+		padding: 15px 25px !important;
+		color: black;
+		font-weight: 600 !important;
+		text-transform: none;
+
+		&:hover {
+			color: #d26e4b;
+			border-color: #d26e4b;
+			background-color: transparent;
+		}
+	}
+}
+
+.tinvwl-input-group .form-control {
+	padding: 0 0 0 10px;
+}

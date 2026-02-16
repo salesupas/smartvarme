@@ -1,0 +1,46 @@
+<!-- wp:template-part {"slug":"header","area":"header"} /-->
+
+<!-- wp:group {"tagName":"main","className":"smartvarme-shop","layout":{"type":"constrained"}} -->
+<main class="wp-block-group smartvarme-shop">
+
+  <!-- wp:query-title {"type":"archive","level":1,"style":{"spacing":{"margin":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|small"}}}} /-->
+
+  <!-- wp:term-description {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|medium"}}}} /-->
+
+  <!-- wp:woocommerce/store-notices /-->
+
+  <!-- wp:group {"className":"shop-controls","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|medium"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+  <div class="wp-block-group shop-controls">
+    <!-- wp:woocommerce/product-results-count /-->
+    <!-- wp:woocommerce/catalog-sorting /-->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:woocommerce/product-collection {"query":{"perPage":48,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","author":"","search":"","exclude":[],"inherit":true,"taxQuery":{},"parents":[],"isProductCollectionBlock":true,"featured":false,"woocommerceOnSale":false,"woocommerceStockStatus":["instock","outofstock","onbackorder"],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[]},"displayLayout":{"type":"flex","columns":3}} -->
+  <div class="wp-block-woocommerce-product-collection">
+    <!-- wp:woocommerce/product-template -->
+      <!-- wp:woocommerce/product-image {"isDescendentOfQueryLoop":true,"isLink":true} /-->
+
+      <!-- wp:post-title {"level":3,"isLink":true,"style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}}} /-->
+
+      <!-- wp:woocommerce/product-price {"isDescendentOfQueryLoop":true,"fontSize":"large"} /-->
+    <!-- /wp:woocommerce/product-template -->
+
+    <!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+      <!-- wp:query-pagination-previous /-->
+      <!-- wp:query-pagination-numbers /-->
+      <!-- wp:query-pagination-next /-->
+    <!-- /wp:query-pagination -->
+
+    <!-- wp:woocommerce/product-collection-no-results -->
+      <!-- wp:paragraph {"placeholder":"Add text or blocks that will display when the query returns no results."} -->
+      <p>Ingen produkter funnet i denne kategorien.</p>
+      <!-- /wp:paragraph -->
+    <!-- /wp:woocommerce/product-collection-no-results -->
+  </div>
+  <!-- /wp:woocommerce/product-collection -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","area":"footer"} /-->

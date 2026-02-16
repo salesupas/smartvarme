@@ -1,0 +1,45 @@
+
+.main-navigation {
+
+	ul li.orange-link a {
+		color: #D26E4B;
+	}
+}
+
+.ast-mobile-popup-inner {
+	.main-navigation {
+		.mobilemenu-secondary {
+			background: #f2f2f2;
+
+			a {
+				font-size: 16px !important;
+				line-height: 2.8em;
+			}
+		}
+	}
+}
+
+/* Cart */
+.ast-header-break-point.ast-hfb-header .ast-cart-menu-wrap {
+	font-size: .9em;
+}
+
+/******
+FIBO SEARCH
+ *****/
+.dgwt-wcas-sf-wrapp {
+
+	input[type=search].dgwt-wcas-search-input {
+		border: 1px solid #F7A720;
+	}
+}
+
+/******
+BREADCRUMBS
+ *****/
+.ast-breadcrumbs-wrapper {
+
+	span.breadcrumb_last {
+		font-weight: 400;
+	}
+}

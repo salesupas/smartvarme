@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "smartvarme/energy-calculator",
+	"version": "0.1.0",
+	"title": "Energikalkulator",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Beregn anbefalt varmepumpeeffekt og energisparing",
+	"example": {},
+	"attributes": {
+		"defaultSquareMeters": {
+			"type": "number",
+			"default": 100
+		},
+		"defaultInsulation": {
+			"type": "string",
+			"default": "medium"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "smartvarme",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

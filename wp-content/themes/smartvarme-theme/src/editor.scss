@@ -1,0 +1,51 @@
+/* Editor styles - compiled by @wordpress/scripts */
+/* Match frontend appearance in block editor */
+
+.editor-styles-wrapper {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+	.wp-block-post-content {
+		max-width: 1140px;
+		margin: 0 auto;
+	}
+
+	// Match FAQ accordion styles in editor
+	.wp-block-details {
+		border: 1px solid #e0e0e0;
+		border-radius: 4px;
+		margin-bottom: 0.5rem;
+
+		summary {
+			padding: 1rem 1.25rem;
+			font-weight: 600;
+			background-color: #f8f9fa;
+			cursor: pointer;
+			list-style: none;
+
+			&::-webkit-details-marker {
+				display: none;
+			}
+
+			&::before {
+				content: '+';
+				display: inline-block;
+				width: 1.5rem;
+				font-weight: bold;
+				color: #f7a720;
+				margin-right: 0.5rem;
+			}
+
+			&:hover {
+				background-color: #eeeeee;
+			}
+		}
+
+		&[open] summary::before {
+			content: '−';
+		}
+
+		> :not(summary) {
+			padding: 0 1.25rem 1rem;
+		}
+	}
+}

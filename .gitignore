@@ -1,0 +1,50 @@
+# Node
+node_modules/
+
+# Theme build output
+wp-content/themes/smartvarme-theme/build/
+wp-content/themes/smartvarme-theme/node_modules/
+
+# Logs
+*.log
+log*.txt
+error_log
+
+# System files
+.DS_Store
+.user.ini
+
+# WordPress core files
+wp-admin/
+wp-includes/
+wp-*.php
+index.php
+xmlrpc.php
+license.txt
+readme.html
+
+# WordPress config
+.htaccess
+wp-config.php
+wp-config-backup-*.php
+
+# Database dumps
+smartvarme_wp_zmmon.sql
+
+# WordPress uploads (media files)
+wp-content/uploads/
+
+# Utility files
+adminer-*.php
+wordfence-waf.php
+find-duplicate-sku.php
+info.php
+
+# Third-party plugins (only track custom plugins)
+wp-content/plugins/*
+!wp-content/plugins/smartvarme-core/
+
+# Third-party themes (only track custom themes)
+wp-content/themes/*
+!wp-content/themes/smartvarme-theme/
+!wp-content/themes/astra-child/

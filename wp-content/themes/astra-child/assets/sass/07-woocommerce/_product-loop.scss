@@ -1,0 +1,81 @@
+/**
+ * Product loop
+ */
+@media (max-width: 544px) {
+	.woocommerce[class*="columns-"].columns-4 > ul.products li.product {
+		width: 100%;
+	}
+
+	.content-area.primary {
+		.maksimer-handpicked-products {
+			ul.products {
+				grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+			}
+		}
+	}
+}
+
+.maksimer-handpicked-products {
+	ul.products {
+		.ast-woo-product-category {
+			display: none !important;
+		}
+	}
+}
+
+
+ul.products {
+	li.product {
+		.ast-shop-product-out-of-stock {
+			display: none !important;
+		}
+
+		.energi_wrapper {
+			a img {
+				max-width: 69px;
+				max-height: 30px;
+				margin-bottom: 0;
+				display: inline-block;
+			}
+		}
+
+		@media screen and (min-width: 992px) {
+			.energi_wrapper {
+				display: inline-block;
+				margin-left: 15px;
+			}
+			.ast-stock-detail {
+				display: inline-block;
+			}
+		}
+
+		span.stock {
+			margin-bottom: 0.5em;
+
+			&.in-stock:before {
+				content: "●";
+				color: #61b476;
+				padding-right: 5px;
+			}
+
+			&.low-stock:before {
+				content: "●";
+				color: #f7a720;
+				padding-right: 5px;
+			}
+
+			&.available-on-backorder:before {
+				content: "●";
+				color: #d26e4b;
+				padding-right: 5px;
+			}
+
+			&.out-of-stock:before {
+				content: "●";
+				color: #ce3434;
+				padding-right: 5px;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,50 @@
+/**
+ * Mini cart
+ */
+
+// little help to keep the mini chart always open for styling :)
+// .ast-site-header-cart .widget_shopping_cart,
+// .woocommerce .ast-site-header-cart .widget_shopping_cart {
+// 	visibility: visible;
+// 	opacity: 1;
+// 	left: unset;
+// 	right: 0;
+// }
+
+.widget.woocommerce.widget_shopping_cart {
+	.widget_shopping_cart_content {
+		.product_list_widget {
+			padding: 0;
+
+			.mini_cart_item {
+				padding: 18px 25px 18px 85px;
+				border-bottom-color: #e2e2e2 !important;
+
+				a {
+					img {
+						margin-left: 15px;
+						margin-bottom: 0;
+					}
+
+					&.remove_from_cart_button {
+						top: calc(50% - 12px);
+						right: 15px;
+					}
+				}
+			}
+		}
+
+		.woocommerce-mini-cart__buttons {
+			a {
+				padding: 15px 25px;
+				font-size: 16px;
+				text-transform: lowercase;
+				border-radius: 5px;
+
+				&:first-letter {
+					text-transform: capitalize;
+				}
+			}
+		}
+	}
+}

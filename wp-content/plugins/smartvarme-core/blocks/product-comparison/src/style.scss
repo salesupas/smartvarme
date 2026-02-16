@@ -1,0 +1,29 @@
+.wp-block-smartvarme-product-comparison {
+    margin: 2rem 0;
+
+    .comparison-table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th,
+        td {
+            padding: 1rem;
+            border: 1px solid #e0e0e0;
+            text-align: left;
+        }
+
+        thead th {
+            background-color: var(--wp--preset--color--primary, #003d5b);
+            color: white;
+            font-weight: 600;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        tbody td:first-child {
+            font-weight: 600;
+        }
+    }
+}

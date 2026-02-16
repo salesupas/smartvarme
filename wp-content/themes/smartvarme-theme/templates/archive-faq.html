@@ -1,0 +1,35 @@
+<!-- wp:template-part {"slug":"header","area":"header"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
+<main class="wp-block-group">
+  <!-- wp:heading {"level":1} -->
+  <h1>Ofte stilte spørsmål</h1>
+  <!-- /wp:heading -->
+
+  <!-- wp:paragraph -->
+  <p>Her finner du svar på de vanligste spørsmålene om varmepumper, ildsteder, og våre tjenester.</p>
+  <!-- /wp:paragraph -->
+
+  <!-- wp:query {"queryId":1,"query":{"perPage":50,"pages":0,"offset":0,"postType":"faq","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true}} -->
+  <div class="wp-block-query">
+    <!-- wp:post-template {"className":"faq-list"} -->
+      <!-- wp:group {"className":"faq-item","layout":{"type":"constrained"}} -->
+      <div class="wp-block-group faq-item">
+        <!-- wp:post-title {"level":3,"isLink":true} /-->
+
+        <!-- wp:post-excerpt {"moreText":"Les hele svaret →","excerptLength":30} /-->
+      </div>
+      <!-- /wp:group -->
+    <!-- /wp:post-template -->
+
+    <!-- wp:query-pagination -->
+      <!-- wp:query-pagination-previous /-->
+      <!-- wp:query-pagination-numbers /-->
+      <!-- wp:query-pagination-next /-->
+    <!-- /wp:query-pagination -->
+  </div>
+  <!-- /wp:query -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","area":"footer"} /-->

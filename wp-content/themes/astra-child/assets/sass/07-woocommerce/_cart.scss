@@ -1,0 +1,45 @@
+/**
+ * Cart
+ */
+
+.woocommerce-cart {
+	.woocommerce {
+		td.actions {
+			button[name="update_cart"] {
+				float: right;
+				max-height: 48px;
+				@media(max-width: 680px) {
+					width: 100% !important;
+					float: none;
+					margin: 0 0 10px !important;
+				}
+			}
+			.tinv-wraper {
+				display: inline-block;
+				padding-top: 0;
+				@media(max-width: 680px) {
+					width: 100%;
+				}
+				.tinvwl_all_cart_to_wishlist_button {
+					color: #fff;
+					max-height: 48px;
+					padding-top: 15px;
+					@media(max-width: 680px) {
+						text-align: center;
+						width: 100% !important;
+						margin-left: 0 !important;
+					}
+				}
+			}
+		}
+		.cart-collaterals {
+			.cross-sells {
+				.products {
+					@media only screen and (max-width: 544px) {
+						grid-template-columns: repeat(1, minmax(0, 1fr));
+					}
+				}
+			}
+		}
+	}
+}
